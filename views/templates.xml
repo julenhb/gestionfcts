@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <template id="report_ficha_alumno">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>
+                                <span t-field="o.name"/>
+                            </h2>
+                            <p style="color: black; font-family: Verdana; font-weight:
+                                bold;">Nombre:
+                                <span t-field="o.name"/>
+                            </p>
+                            <h2>
+                                <span t-field="o.last_name"/>
+                            </h2>
+                            <p style="color: black; font-family: Verdana; font-weight:
+                                bold;">Apellidos:
+                                <span t-field="o.last_name"/>
+                            </p>
+                            <t t-if="o.photography">
+                                <img t-att-src="'data:photography/png;base64,%s' %
+to_text(o.photography)" style="max-height:8cm; max-width:8cm;"/>
+                            </t>
+                            <p></p>
+                            <t t-if="o.work_period">
+                                <p style="color: black; font-family: Verdana; fontweight: bold;">Periodo de prácticas:
+                                    <span t-field="o.work_period"/>
+                                </p>
+                            </t>
+                            <t t-if="o.empresa_id">
+                                <p style="color: black; font-family: Verdana; fontweight: bold;">Empresa de prácticas:
+                                    <span t-field="o.empresa_id"/>
+                                </p>
+                            </t>
+                            <t t-if="o.vocational_training">
+                                <p style="color: black; font-family: Verdana; fontweight: bold;">Ciclo formativo:
+                                    <span t-field="o.vocational_training"/>
+                                </p>
+                            </t>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+<!---
+        <template id="report_ficha_alumno">
+            <t t-call="web.html_container">
+                <t t-call="gestionfcts.report_ficha_alumno"></t>
+            </t>
+        </template>
+
+
+        <template id="report_imprimir_fichas">
+            <t t-call="web.html_container">
+                <t t-call="gestionfcts.report_ficha_alumno"></t>
+            </t>
+        </template>
+        -->
+    </data>
+</odoo>

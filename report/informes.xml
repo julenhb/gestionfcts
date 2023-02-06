@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <report
+            string="Imprimir los datos de los alumnos"
+            id="gestionfcts_alumno_report"
+            model="gestionfcts.alumno"
+            report_type="qweb-pdf"
+            name="gestionfcts.report_ficha_alumno"
+            print_report_name="(object.name)"
+        />
+
+        <report
+            string="Previsualizar la ficha del alumno"
+            id="gestionfcts_alumno_report_preview"
+            model="gestionfcts.alumno"
+            report_type="qweb-html"
+            name="gestionfcts.report_ficha_alumno"
+            print_report_name="(object.name)"
+        />
+    </data>
+</odoo>

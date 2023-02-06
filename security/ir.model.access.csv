@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gestionfcts.coordinadores,gestionfcts.coordinadores,model_gestionfcts_alumno,gestionfcts_coordinadores_group,1,1,1,1
+gestionfcts.coordinadores,gestionfcts.coordinadores,model_gestionfcts_alumno,gestionfcts_coordinadores_group,1,1,1,1
+gestionfcts.profesores,gestionfcts.profesores,model_gestionfcts_alumno,gestionfcts_profesores_group,1,1,0,0
+gestionfcts.profesores,gestionfcts.profesores,model_gestionfcts_empresa,gestionfcts_profesores_group,1,0,0,0

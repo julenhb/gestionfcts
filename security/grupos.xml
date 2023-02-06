@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="ir.module.category" id="gestionfcts_group_category">
+            <field name="name">gestionfcts</field>
+            <field name="description">Grupos del módulo gestionfcts</field>
+        </record>
+        <record id="gestionfcts_coordinadores_group" model="res.groups">
+            <field name="name">coordinadores</field>
+            <field name="category_id" ref="gestionfcts_group_category"/>
+        </record>
+        <record id="gestionfcts_profesores_group" model="res.groups">
+            <field name="name">profesores</field>
+            <field name="category_id" ref="gestionfcts_group_category"/>
+        </record>
+    </data>
+</odoo>
